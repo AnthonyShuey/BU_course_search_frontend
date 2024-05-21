@@ -51,7 +51,7 @@ const stopWords = [
     "huge", "tiny", "short", "long", "new", "old", "high", "low", "up", "down", "out", "in", 
     "through", "between", "within", "without", "before", "after", "during", "above", "below", 
     "around", "near", "far", "other", "another", "any", "few", "more", "such", "only", "own",
-    "same", "so", "than", "too", "very", "semester", 
+    "same", "so", "than", "too", "very", "semester"
 ];
 
 const HomePage = () => {

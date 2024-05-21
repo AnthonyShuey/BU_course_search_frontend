@@ -68,7 +68,7 @@ const HomePage = () => {
             const hubUnits = selectedHubUnits.join(',');
             const codes = selectedCodes.join(',');
             const filteredQuery = filterQuery(query);
-            const response = await axios.get<Course[]>('https://bu-course-search-backend.vercel.app/api/courses', { params: { query: filteredQuery, hub_units: hubUnits, codes, search_mode: searchMode } });
+            const response = await axios.get<Course[]>('https://bu-course-search-backend.vercel.app/backend/api/courses', { params: { query: filteredQuery, hub_units: hubUnits, codes, search_mode: searchMode } });
             setResults(response.data);
         } catch (error) {
             console.error('Error fetching courses:', error);
